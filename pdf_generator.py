@@ -10,7 +10,6 @@ import textwrap
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
-import matplotlib.mathtext as mathtext
 from reportlab.lib.pagesizes import A4
 from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
 from reportlab.lib.units import cm
@@ -304,3 +303,4 @@ def generate_pdf_solution(question: str, answer: str) -> bytes:
     doc.build(story)
     buf.seek(0)
     return buf.read()
+    
