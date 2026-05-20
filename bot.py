@@ -14,11 +14,6 @@ from telegram.ext import (
     filters, ContextTypes
 )
 from PIL import Image
-import matplotlib
-matplotlib.use('Agg')
-import matplotlib.pyplot as plt
-import matplotlib.patches as mpatches
-import numpy as np
 
 from pdf_generator import generate_pdf_solution
 from diagram_generator import generate_diagram
@@ -320,3 +315,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+    
